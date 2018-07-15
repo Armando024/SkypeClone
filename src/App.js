@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Projects from './Components/Projects'
-import Login from './Components/Login'
+import Main from './Components/Main'
 import './App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ constructor(){
   super();
   this.state={
     projects: []
-  }
+  };
 }
 
 componentWillMount(){
@@ -32,12 +32,11 @@ componentWillMount(){
 
     //  /* <Projects projects={this.state.projects} /> */
     return (
-      <div className="App">
-        <Login/>
-
+      <div className="App bg-primary">
+        <Main/>
       </div>
     );
   }
 }
 
-export default App;
+export default App
